@@ -1,4 +1,6 @@
 # Table of contents
 
-* Initial page
+* [Introduction](README.md)
+* [First Chapter](first-chapter.md)
+* [Linux](linux.md)
 
