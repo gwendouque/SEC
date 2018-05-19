@@ -26,7 +26,7 @@ nikto -host 192.168.1.101
 
 ## References
 
-[https://blog.bugcrowd.com/discovering-subdomains](https://blog.bugcrowd.com/discovering-subdomains)
+[discovering-subdomains](https://blog.bugcrowd.com/discovering-subdomains)
 
-[https://high54security.blogspot.cl/2016/01/recon-ng-and-power-to-crawl-trough.html](https://high54security.blogspot.cl/2016/01/recon-ng-and-power-to-crawl-trough.html)
+[recon-ng-and-power-to-crawl-trough](https://high54security.blogspot.cl/2016/01/recon-ng-and-power-to-crawl-trough.html)
 
