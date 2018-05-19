@@ -10,35 +10,35 @@
 
 ## Windows Privilege Escalation:
 
-[http://www.fuzzysecurity.com/tutorials/16.html](http://www.fuzzysecurity.com/tutorials/16.html)
+[fuzzysecurity](http://www.fuzzysecurity.com/tutorials/16.html)
 
-[https://pentest.blog/windows-privilege-escalation-methods-for-pentesters/](https://pentest.blog/windows-privilege-escalation-methods-for-pentesters/)
+[pentest.blog - windows-privilege-escalation-methods-for-pentesters](https://pentest.blog/windows-privilege-escalation-methods-for-pentesters/)
 
-[http://it-ovid.blogspot.com/2012/02/windows-privilege-escalation.html](http://it-ovid.blogspot.com/2012/02/windows-privilege-escalation.html)
+[it-ovid.blogspot -  windows-privilege-escalation](http://it-ovid.blogspot.com/2012/02/windows-privilege-escalation.html)
 
 [https://toshellandback.com/2015/11/24/ms-priv-esc/](https://toshellandback.com/2015/11/24/ms-priv-esc/)  
 
 ## Windows Post Exploitation:
 
-[http://www.handgrep.se/repository/cheatsheets/postexploitation/WindowsPost-Exploitation.pdf](http://www.handgrep.se/repository/cheatsheets/postexploitation/WindowsPost-Exploitation.pdf)
+[WindowsPost-Exploitation.pdf](http://www.handgrep.se/repository/cheatsheets/postexploitation/WindowsPost-Exploitation.pdf)
 
 Mubix: [https://docs.google.com/document/d/1U10isynOpQtrIK6ChuReu-K1WHTJm4fgG3joiuz43rw/edit?hl=en\_US](https://docs.google.com/document/d/1U10isynOpQtrIK6ChuReu-K1WHTJm4fgG3joiuz43rw/edit?hl=en_US)
 
 ## Linux Privilege Escalation:
 
-[https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)
+[g0tmi1k - basic-linux-privilege-escalation](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)
 
 [https://speakerdeck.com/knaps/escape-from-shellcatraz-breaking-out-of-restricted-unix-shells](https://speakerdeck.com/knaps/escape-from-shellcatraz-breaking-out-of-restricted-unix-shells)
 
 ## Linux Post Exploitation:
 
-[https://n0where.net/linux-post-exploitation/](https://n0where.net/linux-post-exploitation/)
+[linux-post-exploitation](https://n0where.net/linux-post-exploitation/)
 
 Mubix: [https://docs.google.com/document/d/1ObQB6hmVvRPCgPTRZM5NMH034VDM-1N-EWPRz2770K4/edit?hl=en\_US\#](https://docs.google.com/document/d/1ObQB6hmVvRPCgPTRZM5NMH034VDM-1N-EWPRz2770K4/edit?hl=en_US#)
 
 ## Metasploit
 
-[https://www.offensive-security.com/metasploit-unleashed/](https://www.offensive-security.com/metasploit-unleashed/)
+[metasploit-unleashed](https://www.offensive-security.com/metasploit-unleashed/)
 
 [http://www.securitytube.net/groups?operation=view&groupId=8](http://www.securitytube.net/groups?operation=view&groupId=8)
 
@@ -46,9 +46,9 @@ Postex: [https://docs.google.com/document/d/1ZrDJMQkrp\_YbU\_9Ni9wMNF2m3nIPEA\_k
 
 ## Pivoting:
 
-[https://pentest.blog/explore-hidden-networks-with-double-pivoting/](https://pentest.blog/explore-hidden-networks-with-double-pivoting/)
+[explore-hidden-networks-with-double-pivoting](https://pentest.blog/explore-hidden-networks-with-double-pivoting/)
 
-[http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/](http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/)
+[simplify-your-life-with-an-ssh-config-file](http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/)
 
 ## OSCP Reviews:
 
@@ -66,7 +66,7 @@ Postex: [https://docs.google.com/document/d/1ZrDJMQkrp\_YbU\_9Ni9wMNF2m3nIPEA\_k
 
 ## Precompiled Exploits:
 
-[https://github.com/offensive-security/exploit-database-bin-sploits](https://github.com/offensive-security/exploit-database-bin-sploits)
+[offensive-security/exploit-database-bin-sploits](https://github.com/offensive-security/exploit-database-bin-sploits)
 
 [https://www.kernel-exploits.com/](https://www.kernel-exploits.com/)
 
@@ -74,11 +74,11 @@ Postex: [https://docs.google.com/document/d/1ZrDJMQkrp\_YbU\_9Ni9wMNF2m3nIPEA\_k
 
 [http://netsec.ws/?p=331](http://netsec.ws/?p=331)
 
-[http://www.securityunlocked.com/2016/01/02/network-security-pentesting/most-useful-msfvenom-payloads/](http://www.securityunlocked.com/2016/01/02/network-security-pentesting/most-useful-msfvenom-payloads/)
+[most-useful-msfvenom-payloads](http://www.securityunlocked.com/2016/01/02/network-security-pentesting/most-useful-msfvenom-payloads/)
 
 ## Shellcode:
 
-[http://www.primalsecurity.net/0x0-shellcoding-tutorial-introduction-to-asm/](http://www.primalsecurity.net/0x0-shellcoding-tutorial-introduction-to-asm/)
+[0x0-shellcoding-tutorial-introduction-to-asm](http://www.primalsecurity.net/0x0-shellcoding-tutorial-introduction-to-asm/)
 
 [https://paraschetal.in/writing-your-own-shellcode](https://paraschetal.in/writing-your-own-shellcode)
 
@@ -88,15 +88,15 @@ Postex: [https://docs.google.com/document/d/1ZrDJMQkrp\_YbU\_9Ni9wMNF2m3nIPEA\_k
 
 ## Rev/Web Shells:
 
-[http://tools.kali.org/maintaining-access/webshells](http://tools.kali.org/maintaining-access/webshells)
+[kali.org/maintaining-access/webshells](http://tools.kali.org/maintaining-access/webshells)
 
-[http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
+[pentestmonkey.net/reverse-shell-cheat-sheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
 
 [https://github.com/stasinopoulos/commix/wiki/Upload-shells](https://github.com/stasinopoulos/commix/wiki/Upload-shells)
 
-[https://highon.coffee/blog/reverse-shell-cheat-sheet/](https://highon.coffee/blog/reverse-shell-cheat-sheet/)
+[reverse-shell-cheat-sheet](https://highon.coffee/blog/reverse-shell-cheat-sheet/)
 
-[https://github.com/JohnTroony/php-webshells](https://github.com/JohnTroony/php-webshells)
+[JohnTroony/php-webshells](https://github.com/JohnTroony/php-webshells)
 
 ## Spawn TTY Shell:
 
@@ -104,49 +104,49 @@ Postex: [https://docs.google.com/document/d/1ZrDJMQkrp\_YbU\_9Ni9wMNF2m3nIPEA\_k
 
 ## Tools
 
-[http://tools.kali.org/tools-listing](http://tools.kali.org/tools-listing)
+[kali tools-listing](http://tools.kali.org/tools-listing)
 
-[http://tools.kali.org/password-attacks/patator](http://tools.kali.org/password-attacks/patator)
+[patator](http://tools.kali.org/password-attacks/patator)
 
-[http://tools.kali.org/web-applications/dirb](http://tools.kali.org/web-applications/dirb)
+[dirb](http://tools.kali.org/web-applications/dirb)
 
 [http://tools.kali.org/web-applications/dirbuster](http://tools.kali.org/web-applications/dirbuster)
 
-[http://tools.kali.org/web-applications/gobuster](http://tools.kali.org/web-applications/gobuster)
+[gobuster](http://tools.kali.org/web-applications/gobuster)
 
-[http://tools.kali.org/web-applications/wpscan](http://tools.kali.org/web-applications/wpscan)
+[wpscan](http://tools.kali.org/web-applications/wpscan)
 
-[http://tools.kali.org/web-applications/joomscan](http://tools.kali.org/web-applications/joomscan)
+[joomscan](http://tools.kali.org/web-applications/joomscan)
 
-[http://tools.kali.org/vulnerability-analysis/sqlmap](http://tools.kali.org/vulnerability-analysis/sqlmap)
+[sqlmap](http://tools.kali.org/vulnerability-analysis/sqlmap)
 
-[http://tools.kali.org/exploitation-tools/commix](http://tools.kali.org/exploitation-tools/commix)
+[commix](http://tools.kali.org/exploitation-tools/commix)
 
-[http://tools.kali.org/maintaining-access/weevely](http://tools.kali.org/maintaining-access/weevely)
+[weevely](http://tools.kali.org/maintaining-access/weevely)
 
-[http://tools.kali.org/password-attacks/ncrack](http://tools.kali.org/password-attacks/ncrack)
+[ncrack](http://tools.kali.org/password-attacks/ncrack)
 
-[http://tools.kali.org/password-attacks/cewl](http://tools.kali.org/password-attacks/cewl)
+[cewl](http://tools.kali.org/password-attacks/cewl)
 
-[http://tools.kali.org/information-gathering/dotdotpwn](http://tools.kali.org/information-gathering/dotdotpwn)
+[dotdotpwn](http://tools.kali.org/information-gathering/dotdotpwn)
 
-[http://tools.kali.org/exploitation-tools/shellnoob](http://tools.kali.org/exploitation-tools/shellnoob)
+[shellnoob](http://tools.kali.org/exploitation-tools/shellnoob)
 
 ## Wordlists
 
-[http://tools.kali.org/password-attacks/wordlists](http://tools.kali.org/password-attacks/wordlists)
+[kali.org/password-attacks/wordlists](http://tools.kali.org/password-attacks/wordlists)
 
-[https://github.com/danielmiessler/SecLists](https://github.com/danielmiessler/SecLists)
+[danielmiessler/SecLists](https://github.com/danielmiessler/SecLists)
 
-[https://github.com/govolution/betterdefaultpasslist](https://github.com/govolution/betterdefaultpasslist)
+[govolution/betterdefaultpasslist](https://github.com/govolution/betterdefaultpasslist)
 
 ## Pen Test Cheat Sheets:
 
-[https://github.com/Hack-with-Github/Awesome-Hacking](https://github.com/Hack-with-Github/Awesome-Hacking)
+[Awesome-Hacking](https://github.com/Hack-with-Github/Awesome-Hacking)
 
-[https://jivoi.github.io/2015/07/01/pentest-tips-and-tricks/](https://jivoi.github.io/2015/07/01/pentest-tips-and-tricks/)
+[pentest-tips-and-tricks/](https://jivoi.github.io/2015/07/01/pentest-tips-and-tricks/)
 
-[http://pwnwiki.io/](http://pwnwiki.io/)
+[pwnwiki.io](http://pwnwiki.io/)
 
-[https://github.com/enaqx/awesome-pentest](https://github.com/enaqx/awesome-pentest)
+[awesome-pentest](https://github.com/enaqx/awesome-pentest)
 
