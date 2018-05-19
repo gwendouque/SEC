@@ -638,5 +638,18 @@ dnscat --host <dnscat server_ip>
 
 
 
+## Plink.exe Tunnel
+
+### PuTTY Link tunnel
+
+**Forward remote port to local address:
+**
+
+
+```
+	plink.exe -P 22 -l root -pw "1337" -R 445:127.0.0.1:445 REMOTE-IP
+
+```
+
 
 
